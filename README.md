@@ -1,2 +1,3 @@
 # TheOdinProject
-TheOdinProject Side Projects made by Rishaad Quaiser
+Web Development Fundamental Practice and Side Projects made by Rishaad Quaiser
+Languages: HTML, CSS, JavaScript
