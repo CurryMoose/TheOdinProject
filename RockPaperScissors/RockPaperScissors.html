@@ -45,11 +45,11 @@
            
                 return "Draw!";
             }
-        
+
             else if(computerSelection == "scissors")
             {
   
-                return "You lose! Scissors beats paper.";
+                return "You Lose! Scissors beats paper.";
             }
 
             else if(computerSelection == "rock")
@@ -59,7 +59,7 @@
             }
 
         }
-        if(playerSelection == "scissors")
+        if(playerSeletion == "scissors")
         {
             if (computerSelection == "paper")
             {
@@ -78,7 +78,6 @@
 
                 return "You lose! Rock beats scissors.";
             }
-        }
 
  
         
@@ -90,17 +89,17 @@
         let scoreComputer = 0;
         let scorePlayer = 0;
         
-        for(i=0; i<5; i++)
+        for(i=0; i<4; i++)
         
         {
             let playerSelection = prompt("Enter the hand you want to play: rock, paper, or scissors?").toLowerCase();
             let computerSelection = computerPlay();
             console.log(playRound(playerSelection, computerSelection));
-            if (playRound(playerSelection, computerSelection).includes("You win!"))
+            if (playRound(playerSelection, computerSelection).contains("You win!"))
             {
                 scorePlayer++;
             }
-            if(playRound(playerSelection, computerSelection).includes("You lose!"))
+            if(playRound(playerSelection, computerSelection).contains("You lose!"))
             {
                 scoreComputer++;
             }
@@ -120,15 +119,11 @@
         {
             console.log("Draw!")
         }
-       
-
     }
 
-    console.log(game());
 
-    
- 
-    
+    console.log(game());
+    }
   </script>
 </body>
 </html>
