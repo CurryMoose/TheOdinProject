@@ -53,7 +53,7 @@ function equate(firstOperand, secondOperand, operator)
 
 function clear()
 {
-    document.getElement(screen).value = "";
+    document.getElementById('compresult').value = "";
     firstOperand = "";
     secondOperand = "";
     result = 0;
@@ -61,11 +61,8 @@ function clear()
 
 function resetScreen()
 {
-  document.getElement(screen).value = "";
+  document.getElementById('compresult').value = "";
 }
-
-
-
 
 
 function add(a, b) {
